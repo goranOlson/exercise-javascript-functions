@@ -82,7 +82,7 @@ console.log(quotient);
 
 /* 5. Area */
 
-// function area(l, h) {
+// function area(l, h){
 //     return l * h;
 // }
 
@@ -97,7 +97,7 @@ console.log('Box area: ' + area(5, 4));
 
 /* 6. Greeting with name again */
 
-function greetingWithNameAgain(firstName, lastName) {
+function greetingWithNameAgain(firstName, lastName){
     return `Hello ${firstName} ${lastName}! How are you doing?`;
 }
 
@@ -108,7 +108,7 @@ console.log(greetingWithNameAgain('Nisse', 'Hult'));
 /* 7. Distance converter */
 /* Det finns i USA en annan, aningen längre, mil: survey mile, cirka 1 609,347 meter */
 
-function kilometerToMiles(k) {
+function kilometerToMiles(k){
     const mile = 1.609347;  // US mile in kilometer
     return k / mile;
 }
@@ -121,7 +121,7 @@ console.log(`${kilometer} kilometers is about ${distance} US miles`);
 
 /* 8. Temperature converter */
 
-// function convertToFarenheit(celsius) {
+// function convertToFarenheit(celsius){
 //     return celsius * 1.8 + 32;
 // }
 
@@ -129,3 +129,50 @@ const convertToFarenheit = (celsius) => celsius * 1.8 + 32;
 
 celsius = 10;
 console.log(`${celsius} degrees Celsius is ${convertToFarenheit(celsius)} degrees Fahrenheit`);
+
+
+
+/* 9. Mean value */
+
+function getMeanValue(array){
+    let sum = 0;
+
+    for(let i=0; i < array.length; i++){
+        sum += array[i];
+    }
+    return sum / array.length;
+}
+
+const arr = [1, 3];
+
+let meanValue = getMeanValue(arr);
+console.log(`Mean value: ${meanValue}`);
+
+
+
+/* 10. Systembolaget */
+const checkAge = (age) => {
+    let msg;
+
+    if (age > 80) {
+        msg = "I'm sorry, where is your caretaker?";
+    } else if (age >= 20) {
+        msg = "Thank you! Welcome!";
+    } else if (age >= 18) {
+        msg = "Sorry, you must be atleast 20. Why don't you try a bar instead?";
+    } else if (age >= 15) {
+        msg = "Sorry, you are not old enough";
+    } else if (age >= 0 && age < 15)  {
+        msg = "Get out of here!";
+    }
+
+    return msg;
+}
+
+const ageMessage = checkAge(20);
+console.log(`Systemboleget says: ${ageMessage}`);
+
+
+
+
+
