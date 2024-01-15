@@ -140,7 +140,6 @@ function getMeanValue(array){
     for(let i=0; i < array.length; i++){
         sum += array[i];
     }
-
     return sum / array.length;
 }
 
@@ -148,3 +147,32 @@ const arr = [1, 3];
 
 let meanValue = getMeanValue(arr);
 console.log(`Mean value: ${meanValue}`);
+
+
+
+/* 10. Systembolaget */
+const checkAge = (age) => {
+    let msg;
+
+    if (age > 80) {
+        msg = "I'm sorry, where is your caretaker?";
+    } else if (age >= 20) {
+        msg = "Thank you! Welcome!";
+    } else if (age >= 18) {
+        msg = "Sorry, you must be atleast 20. Why don't you try a bar instead?";
+    } else if (age >= 15) {
+        msg = "Sorry, you are not old enough";
+    } else if (age >= 0 && age < 15)  {
+        msg = "Get out of here!";
+    }
+
+    return msg;
+}
+
+const ageMessage = checkAge(20);
+console.log(`Systemboleget says: ${ageMessage}`);
+
+
+
+
+
