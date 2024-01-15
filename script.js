@@ -189,3 +189,20 @@ const arrNbrs = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 console.log(`sum: ${sumNumbers(arrNbrs)}`);
 
+
+
+/* 12. List a persons skills */
+
+const printSkills = (Person) => {
+    const skills = Person.skills;
+    console.log(`The skills of ${Person.name}:\n${skills}`);
+}
+
+const Person = {
+    name: 'Nisse',
+    age: 90,
+    city: 'Stockholm',
+    skills: ["Pokemon Master", "Kung Fu Legend", "Football Ninja", "Data nerd"]
+}
+
+printSkills(Person);
