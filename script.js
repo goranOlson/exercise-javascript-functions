@@ -79,6 +79,7 @@ const quotient = division(10, 0);
 console.log(quotient);
 
 
+
 /* 5. Area */
 
 // function area(l, h) {
@@ -91,3 +92,13 @@ console.log(quotient);
 
 const area = (l, h) => l * h;
 console.log('Box area: ' + area(5, 4));
+
+
+
+/* 6. Greeting with name again */
+
+function greetingWithNameAgain(firstName, lastName) {
+    return `Hello ${firstName} ${lastName}! How are you doing?`;
+}
+
+console.log(greetingWithNameAgain('Nisse', 'Hult'));
