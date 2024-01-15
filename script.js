@@ -102,3 +102,17 @@ function greetingWithNameAgain(firstName, lastName) {
 }
 
 console.log(greetingWithNameAgain('Nisse', 'Hult'));
+
+
+
+/* 7. Distance converter */
+/* Det finns i USA en annan, aningen längre, mil: survey mile, cirka 1 609,347 meter */
+
+function kilometerToMiles(k) {
+    const mile = 1.609347;  // US mile in kilometer
+    return k / mile;
+}
+
+const kilometer = 10;
+const distance = kilometerToMiles(kilometer);
+console.log(`${kilometer} is about ${distance} US miles`);
