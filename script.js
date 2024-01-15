@@ -77,3 +77,17 @@ const division = (a, b) => {
 
 const quotient = division(10, 0);
 console.log(quotient);
+
+
+/* 5. Area */
+
+// function area(l, h) {
+//     return l * h;
+// }
+
+// const area = (l, h) => {
+//     return l * h;
+// }
+
+const area = (l, h) => l * h;
+console.log('Box area: ' + area(5, 4));
