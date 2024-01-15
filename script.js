@@ -115,4 +115,17 @@ function kilometerToMiles(k) {
 
 const kilometer = 10;
 const distance = kilometerToMiles(kilometer);
-console.log(`${kilometer} is about ${distance} US miles`);
+console.log(`${kilometer} kilometers is about ${distance} US miles`);
+
+
+
+/* 8. Temperature converter */
+
+// function convertToFarenheit(celsius) {
+//     return celsius * 1.8 + 32;
+// }
+
+const convertToFarenheit = (celsius) => celsius * 1.8 + 32;
+
+celsius = 10;
+console.log(`${celsius} degrees Celsius is ${convertToFarenheit(celsius)} degrees Fahrenheit`);
